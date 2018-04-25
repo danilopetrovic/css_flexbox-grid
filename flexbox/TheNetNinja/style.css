@@ -14,19 +14,23 @@ body {
     display: flex;
     background-color: white;
     flex-wrap: wrap;
-    /*flex-wrap: wrap-reverse;*/
 }
 .box {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    /*umesto min-width kada je flex-wrap na roditelju "nowrap" onda ne ukljucuje horizontalni skrol*/
+    /*flex-basis: 200px;*/
+    /*flex-grow: 1;*/
+    flex: 1 0 200px;
 }
 .one {
     background: red;
+    /*flex-basis: 100px;*/
 }
 .two {
     background: blue;
+    /*flex-basis: 200px;*/
 }
 .three {
     background: green;
+    /*flex-basis: 300px;*/
 }

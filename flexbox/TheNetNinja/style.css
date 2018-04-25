@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    background: #eee;
+    background: #ccc;
 }
 .wrapper {
     width: 100%;
@@ -13,20 +13,20 @@ body {
 .flex-container {
     display: flex;
     background-color: white;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap-reverse;*/
 }
 .box {
     height: 100px;
-    width: 320px;
+    min-width: 200px;
+    flex-grow: 1;
 }
 .one {
     background: red;
-    flex-shrink: 1;
 }
 .two {
     background: blue;
-    flex-shrink: 2;
 }
 .three {
     background: green;
-    flex-shrink: 3;
 }

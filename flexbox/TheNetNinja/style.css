@@ -14,13 +14,20 @@ body {
     display: flex;
     background-color: white;
     flex-wrap: wrap;
+    flex-flow: row;
+    /*flex-flow: column;*/
+    /*flex-flow: row-reverse;*/
+    justify-content: flex-start;
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    height: 800px;
 }
 .box {
     height: 100px;
     /*umesto min-width kada je flex-wrap na roditelju "nowrap" onda ne ukljucuje horizontalni skrol*/
     /*flex-basis: 200px;*/
     /*flex-grow: 1;*/
-    flex: 1 0 200px;
+    flex: 0 0 200px;
 }
 .one {
     background: red;

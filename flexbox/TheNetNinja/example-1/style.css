@@ -24,6 +24,7 @@ nav a {
     color: #fff;
     display: block;
     padding: 10px;
+    /*background-color: #777;*/
 }
 nav a:hover {
     background-color: #555;
@@ -34,8 +35,13 @@ nav a:hover {
     }
     nav ul {
         display: flex;
+        justify-content: flex-start; /*flex treba da bude ugasen na deci da bi centrirao*/
+        /*justify-content: center;*/
+        /*justify-content: flex-end;*/
+        /*justify-content: space-around;*/
+        /*justify-content: space-between;*/
     }
-    nav li {
+    nav ul li {
         flex: 1 1 0;
     }
 }
